@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Agenda</title>
+</head>
+
+<body>
+  <main>
+    <h1>Agenda</h1>
+
+    <div>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" />
+    </div>
+    <div>
+      <label for="telefone">Telefone</label>
+      <input type="text" name="telefone" id="telefone" />
+    </div>
+
+    <button type="button" onclick="salvarContato()">Salvar</button>
+
+    <hr>
+
+    <div class="filtro">
+      <input type="text" name="filtro" id="filtro" placeholder="Nome do contato" />
+      <button type="button" onclick="filtrar()">Buscar</button>
+    </div>
+
+    <table id="agenda">
+      <thead>
+        <tr>
+          <td>Nome</td>
+          <td>Telefone</td>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
