@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cálculo de médias</title>
+</head>
+
+<body>
+  <main>
+    <h1>Cálculo de médias</h1>
+
+    <form method="post" onsubmit="calcular(event)">
+      <div>
+        <label for="nota1">Nota #1:</label>
+        <input type="text" id="nota1" name="nota1">
+      </div>
+      <div>
+        <label for="nota2">Nota #2:</label>
+        <input type="text" id="nota2" name="nota2">
+      </div>
+      <div>
+        <label for="nota3">Nota #3:</label>
+        <input type="text" id="nota3" name="nota3">
+      </div>
+      <button type="submit">Calcular média</button>
+    </form>
+
+    <hr>
+
+    <p>
+      <span>Média:</span><span id="media"></span>
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
